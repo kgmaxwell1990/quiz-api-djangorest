@@ -28,11 +28,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['django-quiz-rest-api-kgmaxwell1990.c9users.io', 'djangoquizapi.herokuapp.com']
 
-CORS_ORIGIN_WHITELIST = (
-    'localhost:3000',
-    'http://katie-udemy-quiz.s3-website-eu-west-1.amazonaws.com/',
-    'https://udemy-quiz-challenge-kgmaxwell1990.c9users.io/'
-)
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
 
