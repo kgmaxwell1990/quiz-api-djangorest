@@ -24,11 +24,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['django-quiz-rest-api-kgmaxwell1990.c9users.io', 'djangoquizapi.herokuapp.com']
 
-CORS_ORIGIN_ALLOW_ALL=True
+CORS_ORIGIN_WHITELIST = (
+    'localhost:3000',
+    'http://katie-udemy-quiz.s3-website-eu-west-1.amazonaws.com/'
+)
 
 # Application definition
 
